@@ -1,5 +1,5 @@
 import sys
-from rechteck import LittleGame
+from rectangle import LittleGame
 
 
 def main():
