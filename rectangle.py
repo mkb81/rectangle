@@ -1,9 +1,6 @@
 """
-Author: Marc Kevin Bendig
-Email: mkbendig@gmail.com
-Date: 2018-18-03
 Description: Display and movement of a rectangle.
-             By pressing space key the color changes (blue/orange)
+             By pressing space key the color will change (blue/orange)
 Version: 0.1
 """
 import pygame
@@ -18,13 +15,13 @@ class LittleGame:
     def __init__(self, movement_speed):
         self.__game_loop = True
         self.__is_blue = True
-        self.__window_size = self.weight, self.height = 640, 320
+        self.__window_size = self.weight, self.height = 640, 480
         self.__screen = None
         self.__clock = None
         self.__x_cord = 100
         self.__y_cord = 100
-        self.__rect_x_size = 15
-        self.__rect_y_size = 15
+        self.__rect_x_size = 20
+        self.__rect_y_size = 20
         self.rect_speed = movement_speed
 
     def __init_game(self):
