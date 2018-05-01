@@ -9,7 +9,7 @@ def main():
     @return: True if start game is successful, otherwise False
     @rtype: bool
     """
-    speed = 5
+    speed = 3
     my_game = rectangle.LittleGame(speed)
     return my_game.start_game()
 
