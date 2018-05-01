@@ -1,19 +1,21 @@
 import sys
-from rectangle import LittleGame
+from src import rectangle
 
 
 def main():
     """
     Start Pygane example
 
-    :return: -
-    :rtype: -
+    @return: True if start game is successful, otherwise False
+    @rtype: bool
     """
-    spped = 5
-    my_game = LittleGame(spped)
-    my_game.start_game()
+    speed = 5
+    my_game = rectangle.LittleGame(speed)
+    return my_game.start_game()
 
 
 if __name__ == "__main__":
-    main()
-    sys.exit(0)
+    if main():
+        sys.exit(0)
+    else:
+        sys.exit(1)
