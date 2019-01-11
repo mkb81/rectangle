@@ -8,7 +8,7 @@ Version: 0.2
 try:
     import pygame
 except ImportError:
-    raise ImportError("You have to install the module 'pygane' first")
+    raise ImportError("The pygame module is not installed. Please start init.sh to install")
 import time
 
 
