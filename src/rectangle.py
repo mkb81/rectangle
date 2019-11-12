@@ -48,9 +48,6 @@ class LittleGame:
     def __close_game(self):
         """
         Close pygame
-
-        @return: -
-        @rtype: -
         """
         pygame.quit()
 
@@ -61,8 +58,6 @@ class LittleGame:
 
         @param event: Game event
         @type event: any
-        @return: -
-        @rtype: -
         """
         if event.type == pygame.QUIT:
             self.__game_loop = False
@@ -78,8 +73,6 @@ class LittleGame:
 
         @param key_pressed: Key press event
         @type key_pressed: tuple
-        @return: -
-        @rtype: -
         """
         if key_pressed[pygame.K_UP]:
             if self.__y_cord <= 0:
@@ -119,9 +112,6 @@ class LittleGame:
     def __update_window(self):
         """
         Update game window
-
-        @return: -
-        @rtype: -
         """
         pygame.display.flip()
         self.__clock.tick(60)
@@ -129,9 +119,6 @@ class LittleGame:
     def __show_rect(self):
         """
         Show rectangle on window
-
-        @return: -
-        @rtype: -
         """
         color = self.__set_rect_color()
         pygame.draw.rect(self.__screen, color, pygame.Rect(self.__x_cord,
@@ -142,9 +129,6 @@ class LittleGame:
     def start_game(self):
         """
         Main game loop
-
-        @return: -
-        @rtype: -
         """
         if not self.__init_game():
             return False
