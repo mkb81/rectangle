@@ -1,6 +1,6 @@
 # Small Pygame example
 
-This is a Pygame (1.9.4) exercise with Python 3.7.1
+This is a [Pygane (2.1.2)](https://www.pygame.org/news[Pygame) exercise with [Python (3.10.2)](https://www.python.org/downloads/)
 
 ## Using
 Create an Python virtual environment and install all dependencies with the following script:
